@@ -1,17 +1,7 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Max pegador de gripe
-        </p>
-        
-      </header>
+    <div>
+      <h1>Ola mundo!</h1>
     </div>
   );
 }
