@@ -1,17 +1,31 @@
 import ImgDsDark from "assets/img/ds-dark.svg";
 import { Link } from "react-router-dom";
+import { BiMoon } from "react-icons/bi";
+import { IoPersonCircleOutline } from "react-icons/io5"
 function NavBar() {
-    return (
-        <div className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-light border-bottom shadow-sm">
-        <div className="container">
-          <nav className="my-2 my-md-0 mr-md-3">
+  return (
+    <div className="bg-light border-bottom shadow-sm fixed-top">
+      <div className="container">
+        <nav className="my-2 row row-cols-2 ">
+          <div className="col">
             <Link to="/">
               <img src={ImgDsDark} alt="DevSuperior" width="120" />
             </Link>
-          </nav>
-        </div>
+          </div>
+
+          <div className="col d-flex justify-content-end">
+            <button className="btn btn-light d-flex" onClick={() => alert("Mudar para modo noturno")}>
+              <BiMoon fontSize="large" />
+            </button>
+            <button className="btn btn-light d-flex" onClick={() => alert("Abrir submenu do user")}>
+              <IoPersonCircleOutline fontSize="large" />
+            </button>
+            <p className="my-1">Wemerson</p>
+          </div>
+
+        </nav>
       </div>
-    );
-  }
-  export default NavBar;
-  
+    </div>
+  );
+}
+export default NavBar;

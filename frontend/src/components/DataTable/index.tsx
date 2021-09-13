@@ -4,6 +4,9 @@ import { useEffect, useState } from "react";
 import { SalePage } from "types/sale";
 import { formatLocalDate, formatMoeda } from "utils/format";
 import { BASE_URL } from "utils/requests";
+import {BiMoney, BiUserCheck, BiUser}  from "react-icons/bi";
+import { MdDateRange } from "react-icons/md";
+import { AiFillSchedule } from "react-icons/ai";
 
 function DataTable() {
     const [activePage, setActivePage] = useState(0);
@@ -27,21 +30,20 @@ function DataTable() {
         setActivePage(index);
     }
 
-
-
-
     return (
         <>
-            <div className="d-flex justify-content-center"><Pagination page={page} onPageChange = {changePage}/></div> 
+            <div className="d-flex justify-content-center">
+                <Pagination page={page} onPageChange = {changePage}/>
+            </div> 
             <div className="table-responsive">
                 <table className="table table-striped table-sm">
                     <thead>
                         <tr>
-                            <th>Data</th>
-                            <th>Vendedor</th>
-                            <th>Clientes visitados</th>
-                            <th>Negócios fechados</th>
-                            <th>Valor</th>
+                            <th><MdDateRange fontSize="large"/>Data</th>
+                            <th><BiUser fontSize="large"/>Vendedor</th>
+                            <th><BiUserCheck fontSize="large"/>Clientes visitados</th>
+                            <th><AiFillSchedule fontSize="large"/>Negócios fechados</th>
+                            <th><BiMoney fontSize="large"/>Valor</th>
                         </tr>
                     </thead>
                     <tbody>

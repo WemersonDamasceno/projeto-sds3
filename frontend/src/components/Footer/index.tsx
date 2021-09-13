@@ -1,6 +1,6 @@
 function Footer() {
     return (
-        <footer className="footer mt-auto py-3 bg-dark">
+        <footer className="footer bg-dark navbar-fixed-bottom">
             <div className="container">
                 <p className="text-light">App desenvolvido por <a href="https://github.com/WemersonDamasceno" target="_blank" rel="noreferrer">Wemerson Damasceno</a></p>
                 <p className="text-light"><small><strong>Semana Spring React</strong><br/>
