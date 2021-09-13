@@ -20,6 +20,8 @@
 
 ## 💻 Projeto
 
+Para visualizar o projeto em execução, basta acessar o link abaixo:
+
 https://painel-vendas-wemersondev.netlify.app
 
 Dashboard Vendas é uma aplicação full stack web construída durante a **Semana Spring React** (#sds4), evento organizado pela [DevSuperior](https://devsuperior.com "Site da DevSuperior").
