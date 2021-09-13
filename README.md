@@ -1,8 +1,3 @@
-<h1 align="center">
-    <img alt="Dashboard Vendas" src="https://vendas-marcosjcs.vercel.app/static/media/ds-dark.90256347.svg" width="250px" />
-    <p>Dashboard Vendas</p>
-</h1>
-
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/WemersonDamasceno/projeto-sds3">
 
@@ -61,7 +56,7 @@ Pré-requisitos: Java 11
 
 ```bash
 # clonar repositório
-git clone https://github.com/marcosjcs/vendas
+git clone https://github.com/WemersonDamasceno/projeto-sds3
 # entrar na pasta do projeto backend
 cd backend
 # executar o projeto
@@ -73,7 +68,7 @@ Pré-requisitos: npm / yarn
 
 ```bash
 # clonar repositório
-git clone https://github.com/marcosjcs/vendas
+git clone https://github.com/WemersonDamasceno/projeto-sds3
 # entrar na pasta do projeto frontend
 cd frontend
 # instalar dependências
